@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Martin's Marvelous Fish Aquarium</title>
+  </head>
+  <body>
+    <header>
+      <div><img class="logo" src="images/logo.png" alt="logo" /></div>
+      <div class="headline">
+        <h1>Martin's Marvelous Fish Aquarium</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content content--left">
+        <!-- Fish List Component -->
+        <article class="fishList">
+          <section class="fish card">
+            <div>
+              <img class="fish__image" src="images/goldfish.jpg" />
+            </div>
+            <div class="fish__name">Farley</div>
+            <div class="fish__species">Goldfish</div>
+            <div class="fish__length">7</div>
+            <div class="fish__location">neighbor's pond</div>
+            <div class="fish__diet">flakes</div>
+          </section> 
+          <section class="fish card">
+            <div>
+              <img class="fish__image image--card" src="images/molly.jpg" />
+            </div>
+            <div class="fish__name">Mona</div>
+            <div class="fish__species">Black Molly</div>
+            <div class="fish__length">3</div>
+            <div class="fish__location">Maui</div>
+            <div class="fish__diet">floaty bits</div>
+          </section>
+          <section class="fish card">
+            <div>
+              <img class="fish__image image--card" src="images/carp.jpg" />
+            </div>
+            <div class="fish__name">Bubba</div>
+            <div class="fish__species">Grass Carp</div>
+            <div class="fish__length">24</div>
+            <div class="fish__location">Harpeth River</div>
+            <div class="fish__diet">all the things</div>
+          </section>
+          <section class="fish card">
+            <div>
+              <img class="fish__image image--card" src="images/angel.jpg" />
+            </div>
+            <div class="fish__name">Felicia</div>
+            <div class="fish__species">Angel Fish</div>
+            <div class="fish__length">4</div>
+            <div class="fish__location">Amazon River</div>
+            <div class="fish__diet">angel hair pasta</div>
+          </section>
+        </article>
+        <!-- Quotes component -->
+        <article class="quotesList">
+          <section class="quote card">
+            <div class="quote__text">"Just Keep Swimming!"</div>
+            <div class="quote__author">--Dory</div>
+          </section>
+          <section class="quote card">
+            <div class="quote__text">"Fish are our friends"</div>
+            <div class="quote__author">--Bruce</div>
+          </section> 
+        </article>
+        <!-- locations component -->
+        <article class="locationsList">
+          <section class="location card">
+            <div>
+              <img
+                class="location__image"
+                src="./images/barrier_reef.jpg"
+                alt=""
+              />
+            </div>
+            <div class="location__name">Great Barrier Reef</div>
+            <div class="location__url">
+              <a
+                href="https://www.australia.com/en-us/places/cairns-and-surrounds/guide-to-the-great-barrier-reef.html"
+                >Australian Guide to the Great Barrier Reef</a
+              >
+            </div>
+            <div class="location__access">Access Difficulty: 5</div>
+            <div class="location__desc">
+              Home to diverse marine life of the most vivid colours, the Great
+              Barrier Reef offers the opportunity for great adventure, both in
+              luxury and on a budget. Whether you explore the stunning
+              Whitsunday Islands, trek the ancient Daintree Rainforest or relax
+              on luxurious tropical islands such as Hayman and Lizard, a day on
+              the reef is all about the unforgettable nature that surrounds you.
+            </div>
+          </section>
+        </article>
+      </div>
+      <!-- Tank tips component -->
+      <div class="content content--right">
+        <aside class="tankTips">
+          <h3>Tank Tips!</h3>
+          <section class="tip card">
+            <h4 class="tip__title">How to Clean your Tank 4 Cheap!</h4>
+            <div class="tip__text">Skany tanks are rank. A little elbow grease and a toliet brush can do wonders!</div>
+            <div class="tip__url">Read more <a href="https://www.skanytank.com">here!</a></div>
+          </section>
+          <section class="tip card">
+            <h4 class="tip__title">Keep Your Cats Out of The Tank!</h4>
+            <div class="tip__text">Cats in your tank? Give 'em a spank. Advice you can take to the bank</div>
+            <div class="tip__url">Read more <a href="https://www.badkitty.com">here!</a></div>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- What are the visual components that make up the user interface (e.g. fish list)?
+- Header for a nav ( eventually )
+- A list of fish
+    -- each fish has a box ( or card )
+- A list of quotes
+- A list of harvest locations
+- Aside with tank tips
+
+What do you think the layout of the site should be? Draw it on Miro, Sketchboard, or with pen and paper.
+
+What are the properties of each fish that you will be representing in your HTML?
+-- image
+-- diet 
+-- harvest_location
+-- length
+-- species
+-- name
+
+
+What are the properties of the fish care tips that Martin wants on the side?
+-- title 
+-- text 
+-- topic  
+
+What are the properties of the locations Martin has visited?
+-- date_visited
+-- name
+-- coordinates
+-- location_url
+-- description
+
+
+What should be the class names for each?
+<main>
+    <article class="content">
+        <section class="content__fish-list">
+            "Hello"
+        </section>
+        <section class="content__quote-list">
+            "Goodbye"
+        </section>
+        <section class="content__location-list">
+            "Hola"
+        </section>
+    </article>
+    <sidebar>
+        "Fish tips!"
+    </sidebar>
+</main>
+
+
+Which semantic tags should you use?
+How can we use Flexbox to build a better layout of fish and locations?
+Which CSS files should be created? Consider the @import keyword to modularize your styling. -->
